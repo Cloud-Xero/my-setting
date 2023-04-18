@@ -4,6 +4,7 @@ GraphQL.vscode-graphql-syntax
 JuanBlanco.solidity
 MS-CEINTL.vscode-language-pack-ja
 MariusAlchimavicius.json-to-ts
+MohammadBaqer.better-folding
 Orta.vscode-jest
 PKief.material-icon-theme
 Prisma.prisma
