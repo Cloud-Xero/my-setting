@@ -56,6 +56,7 @@
   "editor.accessibilitySupport": "off", // エディターのアクセシビリティサポートを無効
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.mouseWheelZoom": true, // Ctrl + スクロールでエディターの文字「のみ」拡大縮小可能
   "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
   "editor.tabSize": 2, // タブキーを押したときに2スペース分のインデントを挿入
   "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
