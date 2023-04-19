@@ -57,7 +57,6 @@
   "cSpell.languageSettings": [], // Code Spell Checker拡張機能の言語設定としてデフォルトの言語設定を使用
   "css.lint.unknownAtRules": "ignore", // 未知のCSS @ルールに対するリント警告を無視
   "editor.accessibilitySupport": "off", // エディターのアクセシビリティサポートを無効
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.mouseWheelZoom": true, // Ctrl + スクロールでエディターの文字「のみ」拡大縮小可能
   "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
