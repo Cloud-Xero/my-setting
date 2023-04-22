@@ -1,0 +1,57 @@
+# tap（extensions）
+tap "ethereum/ethereum"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
+
+# cask(gui)
+cask "brave"
+cask "docker-desktop"
+cask "figma"
+cask "google-chrome"
+cask "google-cloud-sdk"
+cask "microsoft-edge"
+cask "postman"
+cask "raycast"
+cask "slack"
+cask "visual-studio-code"
+cask "warp"
+cask "zoom"
+
+# cli
+brew "actionlint"
+brew "asdf"
+brew "bat"
+brew "curl"
+brew "direnv"
+brew "docker"
+brew "ethereum"
+brew "fd"
+brew "fzf"
+brew "gawk"
+brew "gh"
+brew "git"
+brew "gnupg"
+brew "go"
+brew "grep"
+brew "htop"
+brew "jq"
+brew "kubectx"
+brew "kubernetes-cli"
+brew "postgresql"
+brew "python@3.10"
+brew "ripgrep"
+brew "sqlite"
+brew "tfenv"
+brew "tmux"
+brew "tree"
+brew "watch"
+brew "wget"
+
+
+
+
+
+
