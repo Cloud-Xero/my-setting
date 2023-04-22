@@ -1,16 +1,16 @@
 {
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode",
-    "editor.formatOnSave": true // ファイル保存時に自動フォーマット
+    "editor.formatOnSave": true
   },
   "[go]": {
     "editor.formatOnSave": true
   },
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true // ESLint のすべての自動修正可能な問題を修正
+      "source.fixAll.eslint": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトのフォーマッターとしてPrettierを使用
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
@@ -24,14 +24,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.quickSuggestions": {
-      "strings": true // 文字列内で入力中の単語に対してクイック候補を表示
+      "strings": true
     },
-    "editor.suggest.insertMode": "replace", // 入力中の単語が選択された候補で置き換えられる
-    "gitlens.codeLens.scopes": ["document"] // GitLens拡張機能のコードレンズ機能を文書スコープでのみ表示するように指定
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ]
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
+    "editor.wordBasedSuggestions": false
   },
   "[terraform]": {
     "editor.formatOnSave": true
@@ -54,41 +61,59 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "cSpell.languageSettings": [], // Code Spell Checker拡張機能の言語設定としてデフォルトの言語設定を使用
-  "css.lint.unknownAtRules": "ignore", // 未知のCSS @ルールに対するリント警告を無視
-  "editor.accessibilitySupport": "off", // エディターのアクセシビリティサポートを無効
+  "cSpell.languageSettings": [],
+  "cSpell.userWords": [],
+  "css.lint.unknownAtRules": "ignore",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": true,
-  "editor.mouseWheelZoom": true, // Ctrl + スクロールでエディターの文字「のみ」拡大縮小可能
-  "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
-  "editor.tabSize": 2, // タブキーを押したときに2スペース分のインデントを挿入
-  "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
-  "emmet.triggerExpansionOnTab": true, // Tabキーを押すことでEmmetのアビブリエーションを展開
+  "editor.guides.bracketPairs": "active",
+  "editor.mouseWheelZoom": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
   "emmet.variables": {
-    "lang": "ja" // Emmetの変数langを日本語（ja）に設定
+    "lang": "ja"
   },
-  "eslint.codeActionsOnSave.rules": null, // 保存時にESLintが実行するコードアクションのルールを無効（Prettier使用のため）
+  "eslint.codeActionsOnSave.rules": null,
+  "explorer.sortOrder": "type",
   "files.associations": {
-    "*.css": "css" // ファイルの拡張子が.cssであるファイルをCSSファイルとして関連付ける
+    "*.css": "css"
   },
-  "files.insertFinalNewline": true, // ファイルの最後に新しい行を自動的に挿入
-  "files.trimTrailingWhitespace": true, // 保存時に行末の空白を自動的に削除
-  "git.confirmSync": false, // Git同期操作を実行する際に確認ダイアログを表示しない
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
   "go.formatTool": "goimports",
   "go.lintTool": "golangci-lint",
-  "go.toolsManagement.autoUpdate": true, // Go言語のツールを自動的に更新
-  "importSorter.importStringConfiguration.tabSize": 2, // インポート整理拡張機能のタブサイズを2スペースに設定
+  "go.toolsManagement.autoUpdate": true,
+  "hardhat.telemetry": true,
+  "importSorter.importStringConfiguration.tabSize": 2,
   "markdown.preview.fontFamily": "'OperatorMonoSSmLig-Light', 'HiraginoSans-W2'",
   "markdown.preview.fontSize": 14,
-  "scm.diffDecorationsIgnoreTrimWhitespace": "true", // ソースコード管理システムの差分装飾で空白のトリムを無視
-  "security.workspace.trust.untrustedFiles": "open", // 信頼されていないファイルを開くことを許可
-  "stylelint.enable": true, // CSSやSCSSなどのファイルでリントを実行
-  "terminal.external.osxExec": "Warp.app", // macOSの外部ターミナルとしてWarp.appを使用
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "redhat.telemetry.enabled": true,
+  "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+  "security.workspace.trust.untrustedFiles": "open",
+  "stylelint.enable": true,
+  "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "terraform.codelens.referenceCount": true, // Terraform拡張機能のコードレンズでリソース参照数を表示
-  "terraform.languageServer.enable": true, // Terraform言語サーバーを有効（ハイライト、補完、定義ジャンプ）
-  "typescript.locale": "en", // TypeScriptのエラーメッセージやヒントを英語で表示
-  "workbench.editor.enablePreview": false, // ファイルを開く際に新しいエディタータブが作成される
+  "terraform.codelens.referenceCount": true,
+  "terraform.languageServer.enable": true,
+  "typescript.locale": "en",
+  "window.openFoldersInNewWindow": "on",
+  "workbench.editor.enablePreview": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "workbench.iconTheme": "material-icon-theme"
 }
