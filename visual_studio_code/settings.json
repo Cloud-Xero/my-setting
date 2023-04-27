@@ -81,6 +81,13 @@
     "lang": "ja"
   },
   "eslint.codeActionsOnSave.rules": null,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "explorer.sortOrder": "type",
   "files.associations": {
     "*.css": "css"
