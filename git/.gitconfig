@@ -1,0 +1,114 @@
+
+[alias]
+  b = branch
+	ba = branch -a
+	bd = branch -d
+	bdd = branch -D
+	br = branch -r
+  c = commit
+	ca = commit -a
+	cm = commit -m
+  cl = clone
+  d = diff
+	dp = diff --patience
+	dc = diff --cached
+	dk = diff --check
+	dck = diff --cached --check
+  f = fetch
+	fo = fetch origin
+	fu = fetch upstream
+  g = grep -p
+  l = log --oneline
+	lg = log --oneline --graph --decorate
+  m = merge
+	ma = merge --abort
+	mc = merge --continue
+	ms = merge --skip
+  o = checkout
+	om = checkout master
+	ob = checkout -b
+  ps = push
+	psf = push -f
+	psu = push -u
+	pst = push --tags
+  pso = push origin
+	psao = push --all origin
+	psfo = push -f origin
+	psuo = push -u origin
+  psom = push origin master
+	psaom = push --all origin master
+	psfom = push -f origin master
+	psuom = push -u origin master
+  pl = pull
+	pb = pull --rebase
+  plo = pull origin
+	pbo = pull --rebase origin
+	plom = pull origin master
+  rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase --interactive
+	rbs = rebase --skip
+  re = reset
+	rh = reset HEAD
+	reh = reset --hard
+	rem = reset --mixed
+	res = reset --soft
+	rehh = reset --hard HEAD
+	remh = reset --mixed HEAD
+	resh = reset --soft HEAD
+	rehom = reset --hard origin/master
+  r = remote
+	ra = remote add
+	rr = remote rm
+	rv = remote -v
+	rn = remote rename
+	rp = remote prune
+	rs = remote show
+  s = status
+	sb = status -s -b
+[color]
+  ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[core]
+  editor = code --wait
+[diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  # When using --word-diff, assume --word-diff-regex=.
+  wordRegex = .
+  # Display submodule-related information (commit listings)
+  submodule = log
+  # Use VSCode as default diff tool when running `git diff-tool`
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[fetch]
+  prune = true
+[init]
+	defaultBranch = master
+[pager]
+  branch = false
+[pull]
+    ff = only
+[rebase]
+    autosquash = true
+    autostash = true
+[user]
+   name = yourname
+   email = youremail@email.com
