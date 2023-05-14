@@ -1,10 +1,12 @@
-# settings.json
+## settings.json
 
 | 設定項目                                                                              | 説明                                                                                          |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | `[astro]`                                                                             | Astro ファイル用の設定                                                                        |
 | `"editor.defaultFormatter": "astro-build.astro-vscode"`                               | Astro ファイル用のデフォルトフォーマッターとして astro-build.astro-vscode を使用              |
 | `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行                                                        |
+| `"recommendations": ["astro-build.astro-vscode"]`                                     | Astro ファイルを扱う際に astro-build.astro-vscode 拡張機能を推奨するように設定                |
+| `"unwantedRecommendations: []"`                                                       | 特定の推奨拡張機能を無視する設定で、現在は空の配列となっている                                |
 | `[go]`                                                                                | Go ファイル用の設定                                                                           |
 | `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行                                                        |
 | `[javascript]`                                                                        | JavaScript ファイル用の設定                                                                   |
@@ -15,7 +17,7 @@
 | `"editor.codeActionsOnSave": { "source.fixAll.eslint": true }`                        | ファイル保存時に自動で ESLint による問題修正を実行                                            |
 | `"editor.defaultFormatter": "esbenp.prettier-vscode"`                                 | デフォルトのフォーマッターとして Prettier を使用                                              |
 | `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行                                                        |
-| `[json]`                                                                              | JSON ファイル用の設定                                                                         |
+| `[json][jsonc]`                                                                       | JSON ファイルと JSON with Comments ファイル用の設定                                           |
 | `"editor.defaultFormatter": "esbenp.prettier-vscode"`                                 | デフォルトのフォーマッターとして Prettier を使用                                              |
 | `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行                                                        |
 | `"editor.quickSuggestions": { "strings": true }`                                      | 文字列内で入力中の単語に対してクイック候補を表示                                              |
@@ -26,6 +28,7 @@
 | `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行するよう設定                                            |
 | `[python]`                                                                            | Python ファイル用の設定                                                                       |
 | `"editor.formatOnType": true`                                                         | 文字を入力する度に自動フォーマットを実行するよう設定                                          |
+| `"editor.formatOnSave": true`                                                         | ファイル保存時に自動フォーマットを実行するよう設定                                            |
 | `"editor.tabSize": 4`                                                                 | タブ幅を 4 に設定                                                                             |
 | `"editor.wordBasedSuggestions": false`                                                | 単語を基準にした提案を無効にするよう設定                                                      |
 | `[terraform]`                                                                         | Terraform ファイル用の設定                                                                    |
@@ -88,3 +91,22 @@
 | `"workbench.editor.enablePreview": false"`                                            | ファイルを開く際に新しいエディタータブが作成されないよう設定                                  |
 | `"workbench.editorAssociations": { "*.ipynb": "jupyter-notebook" }`                   | エディタの関連付けを指定するよう設定                                                          |
 | `"workbench.iconTheme": "material-icon-theme"`                                        | アイコンテーマを Material Icon Theme に設定するよう設定                                       |
+
+## launch.json
+
+**Common**
+
+| 設定項目                        | 説明                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| `"version": "0.2.0"`            | `launch.json` ファイルのバージョンで、現在は固定の値 "0.2.0" を使用      |
+| `"configurations": [ { ... } ]` | デバッグ設定の配列で、異なるデバッグシナリオを表す設定を含めることが可能 |
+
+**configurations for Node.js**
+
+| 設定項目                                     | 説明                                                                                                                                   |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Astro`                                      |                                                                                                                                        |
+| `"command": "./node_modules/.bin/astro dev"` | デバッグセッションを開始するために実行するコマンド。ここでは Astro の開発サーバを起動するコマンドが指定されている                      |
+| `"name": "Development server"`               | デバッグ設定の名前。ユーザーが設定を選択する際に表示される                                                                             |
+| `"request": "launch"`                        | デバッグセッションのタイプ。"launch"は新しいデバッグセッションを開始することを意味し、"attach"は既存のプロセスに接続することを意味する |
+| `"type": "node-terminal"`                    | デバッガのタイプ。ここでは、Node.js のターミナルを使用してコマンドを実行することが指定されている                                       |
