@@ -5,7 +5,7 @@
     "recommendations": ["astro-build.astro-vscode"],
     "unwantedRecommendations": []
   },
-  "[css]": {
+  "[css][scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
