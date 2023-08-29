@@ -17,6 +17,7 @@ cask "postman"
 cask "raycast"
 cask "slack"
 cask "visual-studio-code"
+cask "vpn-by-google-one"
 cask "warp"
 cask "zoom"
 
