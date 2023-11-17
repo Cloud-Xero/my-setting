@@ -6,7 +6,7 @@
   ```
 - Import
   ```bash
-  $ brew bundle
+  $ brew bundle  --file 'path/filename'
   ```
 - Check the list of packages in the Brewfile
   ```bash
