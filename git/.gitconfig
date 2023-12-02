@@ -1,4 +1,6 @@
-
+[user]
+	name = yourname
+	email = youremail@email.com
 [alias]
   b = branch
 	ba = branch -a
@@ -105,10 +107,12 @@
 [pager]
   branch = false
 [pull]
-    ff = only
+  ff = only
+	rebase = merges
 [rebase]
-    autosquash = true
-    autostash = true
-[user]
-   name = yourname
-   email = youremail@email.com
+  autosquash = true
+  autostash = true
+[merge]
+	ff = false
+[ghq]
+	root = ~/git
