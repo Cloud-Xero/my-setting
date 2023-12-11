@@ -37,7 +37,9 @@ GUI
 
 | cask               | 説明 |
 | ------------------ | ---- |
+| arc                | -    |
 | brave              | -    |
+| cursor             | -    |
 | docker-desktop     | -    |
 | figma              | -    |
 | google-chrome      | -    |

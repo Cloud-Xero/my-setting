@@ -7,7 +7,9 @@ tap "homebrew/cask-versions"
 tap "homebrew/services"
 
 # cask(gui)
+cask "arc"
 cask "brave"
+cask "cursor"
 cask "docker-desktop"
 cask "figma"
 cask "google-chrome"
